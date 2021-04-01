@@ -1,14 +1,8 @@
-import express, { Request, Response } from "express";
+import app from "./server";
+import config from "@shared/config";
 
-const app = express();
-const port = 3000;
+const port = config.port;
 
-app.get("/", (req: Request, res: Response) => {
-  const date = new Date();
-  res.status(200).send({
-    message: date.toISOString(),
-  });
-});
 app.listen(port, () => {
   console.log("Express server started on port: " + port);
 });
