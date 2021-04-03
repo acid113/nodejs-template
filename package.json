@@ -7,7 +7,8 @@
     "start": "node --inspect -r module-alias/register ./dist",
     "dev": "nodemon --config nodemon.json",
     "lint": "eslint . --ext .ts,.js",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
   },
   "_moduleAliases": {
     "@daos": "dist/daos",
@@ -30,6 +31,7 @@
     "eslint": "7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
