@@ -1,5 +1,4 @@
-import express, { Request, Response } from "express";
-import { StatusCodes } from "http-status-codes";
+import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
@@ -8,6 +7,7 @@ import BaseRouter from "./routes";
 import config from "@shared/config";
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -3,9 +3,16 @@
   "parserOptions": {
     "ecmaVersion": 2021
   },
-  "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
-  ]
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "ignorePatterns": ["/node_modules/", "/dist/"],
+  "rules": {
+    "no-console": "warn",
+
+    "no-alert": "error",
+    "no-debugger": "error",
+    "no-duplicate-imports": "error",
+    "no-unreachable": "error",
+    "require-await": "error"
+  }
 }

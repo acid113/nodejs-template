@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node --inspect -r module-alias/register ./dist",
     "dev": "nodemon --config nodemon.json",
-    "lint": "eslint .",
-    "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint --fix ."
   },
   "_moduleAliases": {
     "@daos": "dist/daos",
@@ -25,9 +25,9 @@
     "@types/http-status-codes": "^1.2.0",
     "@types/jest": "^26.0.22",
     "@types/morgan": "^1.9.2",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "eslint": "^7.22.0",
+    "@typescript-eslint/eslint-plugin": "4.20.0",
+    "@typescript-eslint/parser": "4.20.0",
+    "eslint": "7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "jest": "^26.6.3",

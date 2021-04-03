@@ -1,6 +1,6 @@
+node_modules/
 coverage/
 dist/
-util/
 
 **/__tests__/
 **/*.spec.ts
